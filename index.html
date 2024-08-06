@@ -1,6 +1,12 @@
 <html>
 <head>
     <title>JN | Network</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JN | Network - Explore our Minecraft server with Practice and Survival modes. Join our community and enjoy a unique gaming experience!">
+    <meta name="keywords" content="Minecraft, server, Practice mode, Survival mode, EaglerCraft, gaming">
+    <meta name="author" content="JN Network">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <script type="text/javascript" src="embed.js"></script>
     <script type="text/javascript">
     window.addEventListener("load", () => {
@@ -12,14 +18,38 @@
             background: #f0f0f0;
             color: #333;
             font-family: 'Montserrat', Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
         }
 
         .header {
-            margin: 40px 0;
-            font-size: 2em;
+            background: #1088f3;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .header .discord-link {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header .discord-link:hover {
+            background-color: #fff;
+            color: #1088f3;
         }
 
         #embed {
@@ -59,11 +89,22 @@
             background-color: #1088f3;
             color: white;
         }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>JN | Network</h1>
+        <a href="https://dsc.gg/jnreborn" class="discord-link">Join our Discord</a>
     </div>
     <div id="embed"></div>
     <div class="content">
@@ -75,7 +116,9 @@
             <h2>Survival</h2>
             <p>Enjoy a compact experience with plenty of features and a unique design never seen before in the EaglerCraft community!</p>
         </div>
-        <a href="https://dsc.gg/jnreborn" class="discord-link">Join our Discord</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 JN Network. All rights reserved.</p>
     </div>
 </body>
 </html>
