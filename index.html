@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>JN | Network</title>
+    <script type="text/javascript" src="https://github.com/JunarMC/newweb/raw/main/embed.js"></script>
+    <script type="text/javascript">
+    window.addEventListener("load", () => {
+        new ServerEmbed(document.getElementById("embed"), "75%").ping("wss://play.junarmc.xyz");
+    });
+    </script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            margin-top: 20px;
+        }
+        #embed {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>JN | Network</h1>
+    </div>
+    <div id="embed"></div>
+</body>
+</html>
