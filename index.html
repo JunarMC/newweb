@@ -21,6 +21,29 @@
         }
         #embed {
             margin-top: 20px;
+            font-size: 16px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .gamemode {
+            margin: 20px 0;
+        }
+        a {
+            color: #1088f3;
+            text-decoration: none;
+        }
+        .discord-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #1088f3;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .discord-link:hover {
+            background-color: #1088f3;
+            color: white;
         }
     </style>
 </head>
@@ -28,6 +51,17 @@
     <div class="header">
         <h1>JN | Network</h1>
     </div>
-    <div id="embed"></div>
+    <div id="embed" style="position: relative; top: 10px; margin: 0 auto; width: 75%;"></div>
+    <div class="content">
+        <div class="gamemode">
+            <h2>Practice</h2>
+            <p>Experience great Knockback and custom core.</p>
+        </div>
+        <div class="gamemode">
+            <h2>Survival</h2>
+            <p>Enjoy a compact experience with plenty of features and a unique design never seen before in the EaglerCraft community!</p>
+        </div>
+        <a href="https://dsc.gg/jnreborn" class="discord-link">Join our Discord</a>
+    </div>
 </body>
 </html>
