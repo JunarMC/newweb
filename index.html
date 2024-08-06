@@ -20,6 +20,7 @@
             font-family: 'Montserrat', Arial, sans-serif;
             margin: 0;
             padding: 0;
+            padding-bottom: 60px;
         }
 
         .header {
@@ -27,7 +28,11 @@
             color: #fff;
             padding: 15px 20px;
             text-align: center;
-            position: relative;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
         }
 
         .header h1 {
@@ -36,15 +41,13 @@
         }
 
         .header .discord-link {
-            position: absolute;
-            top: 15px;
-            right: 20px;
             display: inline-block;
             padding: 10px 20px;
             border: 2px solid #fff;
             border-radius: 5px;
             color: #fff;
             transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
         }
 
         .header .discord-link:hover {
@@ -53,7 +56,7 @@
         }
 
         #embed {
-            margin: 20px auto;
+            margin: 70px auto 20px;
             width: 50%;
         }
 
@@ -95,16 +98,17 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>JN | Network</h1>
-        <a href="https://dsc.gg/jnreborn" class="discord-link">Join our Discord</a>
+        <a href="https://dsc.gg/jnreborn" class="discord-link">Discord</a>
     </div>
     <div id="embed"></div>
     <div class="content">
