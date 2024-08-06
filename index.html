@@ -12,6 +12,22 @@
     window.addEventListener("load", () => {
         new ServerEmbed(document.getElementById("embed"), "50%").ping("wss://play.junarmc.xyz");
     });
+
+    function adjustFooter() {
+        const footer = document.querySelector('.footer');
+        const bodyHeight = document.body.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (bodyHeight < windowHeight) {
+            footer.style.position = 'absolute';
+            footer.style.bottom = '0';
+        } else {
+            footer.style.position = 'relative';
+        }
+    }
+
+    window.addEventListener('resize', adjustFooter);
+    window.addEventListener('load', adjustFooter);
     </script>
     <style>
         body {
@@ -20,14 +36,16 @@
             font-family: 'Montserrat', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            padding-bottom: 60px;
+            padding-bottom: 60px; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .header {
             background: #1088f3;
             color: #fff;
             padding: 15px 20px;
-            position: relative;
             width: 100%;
             box-sizing: border-box;
             display: flex;
@@ -85,9 +103,10 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: relative;
             width: 100%;
             box-sizing: border-box;
+            position: relative;
+            bottom: 0;
         }
     </style>
 </head>
